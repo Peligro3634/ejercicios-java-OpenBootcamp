@@ -2,8 +2,29 @@ public class ejtema9OpenBootcamp {
     public static void main(String[] args){
 
         Cliente cliente = new Cliente();
+
         cliente.setEdad(15);
-        System.out.println(cliente.getEdad());
+        cliente.setTelefono(35484646);
+        cliente.setNombre("andres");
+        cliente.setCredito(50000);
+        System.out.println("Nombre: " + cliente.getNombre());
+        System.out.println("Edad: " + cliente.getEdad());
+        System.out.println("Telefono: " + cliente.getTelefono());
+        System.out.println("Credito: " + cliente.getCredito());
+
+        Trabajador trabajador = new Trabajador();
+
+        trabajador.setNombre("nare");
+        trabajador.setEdad(46);
+        trabajador.setSalario(456);
+        trabajador.setTelefono(3514646);
+        System.out.println("Nombre: " + trabajador.getNombre());
+        System.out.println("Edad: " + trabajador.getEdad());
+        System.out.println("Telefono: " + trabajador.getTelefono());
+        System.out.println("Salario: " + trabajador.getSalario());
+
+
+
     }
 }
 class Personas{
